@@ -4,7 +4,7 @@ module.exports = {
   // Get all users
   getUsers(req, res) {
     User.find()
-      .then((user) => res.json(users))
+      .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
   // Get a user
@@ -76,7 +76,7 @@ removeFriend(req, res) {
     { _id: req.params.userId },
     { $pull: { friends: req.params.friendId  } },
     console.log(req.body)
-    // { runValidators: true, new: true }
+  
   )
     .then((user) =>
       !user
@@ -87,4 +87,4 @@ removeFriend(req, res) {
         
     )
     .catch((err) => res.status(500).json(err));
-},
+};
