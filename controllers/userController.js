@@ -55,6 +55,7 @@ module.exports = {
 };
 // Add a friend to a user
 addFriend(req, res) {
+  console.log('You are adding a new friend')
   User.findOneAndUpdate(
     { _id: req.params.userId },
     { $addToSet: { friends: req.params.friendId } },
@@ -69,7 +70,7 @@ addFriend(req, res) {
         : res.json(`User with ID '${req.params.friendId}' is now a friend to UserID ${req.params.userId}`)
     )
     .catch((err) => res.status(500).json(err));
-},
+};
 // Remove friend from a user
 removeFriend(req, res) {
   User.findOneAndUpdate(
