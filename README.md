@@ -10,7 +10,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ##Installation 
 
-Run "npm i" and "node index.js" in the terminal 
+Run "npm i" and "npm run start" in the terminal 
 
 ## Usage
 
