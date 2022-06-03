@@ -17,7 +17,7 @@ Run "npm i" and "npm run start" in the terminal
 Use mongoDB then hit the end-points with an API
 
 ## Video Demonstration 
-[![Demo Video](https://img.youtube.com/vi/f4zr88QlA/0.jpg)](https://www.youtube.com/watch?v=Q-f4zr88QlA)
+[![Demo Video](https://img.youtube.com/vi/UhjHBDzxgwk/0.jpg)](https://www.youtube.com/watch?v=UhjHBDzxgwk)
 
 ## Credit
 
